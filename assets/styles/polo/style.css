@@ -6019,8 +6019,8 @@ span.rec-by {
     background-color: #171515 !important;
     color: #ffffff !important;
     border-width: 0; }
-  .btn + .btn {
-    margin-left: 2px; }
+  /*.btn + .btn {
+    margin-left: 2px; }*/
 
 @media (max-width: 991px) {
   .btn.btn-reveal.btn-reveal-left:hover span {

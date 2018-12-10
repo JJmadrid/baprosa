@@ -6,11 +6,11 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="cart-product-thumbnail">Producto</th>
-                            <th class="cart-product-name">Descripción</th>
-                            <th class="cart-product-price">Precio</th>
-                            <th class="cart-product-quantity">Cantidad</th>
-                            <th class="cart-product-subtotal">Total</th>
+                            <th class="text-center cart-product-thumbnail">Producto</th>
+                            <th class="text-center cart-product-name">Descripción</th>
+                            <th class="text-center cart-product-price">Precio</th>
+                            <th class="text-center cart-product-quantity">Cantidad</th>
+                            <th class="text-center cart-product-subtotal">Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -25,21 +25,21 @@
                                     </a>
                                 </div>
                             </td>
-                            <td class="cart-product-description">
+                            <td class="text-center cart-product-description">
 
                                 <div class="cart-product-thumbnail-name">{{item.itemName}}</div>
                             </td>
-                            <td class="cart-product-price">
+                            <td class="text-center cart-product-price">
                                 <span class="amount">{{item.price | currency: 'L '}}</span>
                             </td>
-                            <td class="cart-product-quantity">
+                            <td class="text-center cart-product-quantity">
                                 <div class="quantity">
                                     <input type="button" class="minus" value="-" ng-click="lessQuantity(item)">
                                     <input type="text" class="qty" value="1" name="quantity" ng-model="item.quantity">
                                     <input type="button" class="plus" value="+" ng-click="addQuantity(item)">
                                 </div>
                             </td>
-                            <td class="cart-product-subtotal text-right">
+                            <td class="text-center cart-product-subtotal">
                                 <span class="amount">{{itemTotal(item) | currency: 'L '}}</span>
                             </td>
                         </tr>
