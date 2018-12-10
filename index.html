@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Raquel Jackson"/>
+    <!-- Document title -->
+    <title>Baprosa</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="assets/fonts/SourceSansPro/SourceSansPro-Regular.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/fonts/SourceSansPro/SourceSansPro-Bold.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800"
+          rel="stylesheet" type="text/css"/>
+    <link href="assets/styles/polo/plugins.css" rel="stylesheet">
+    <link href="assets/styles/polo/style.css" rel="stylesheet">
+    <link href="assets/styles/polo/responsive.css" rel="stylesheet">
+</head>
+
+<body ng-app="app" ng-controller="AppCtrl" class="no-page-loader">
+<div id="wrapper">
+
+    <div ui-view></div>
+
+    <footer id="footer" class="footer-dark">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 border-right text-right p-r-40">
+                        <!-- Footer widget area 2 -->
+                        <div class="widget m-b-0">
+                            <h4 class="m-b-10">Baprosa</h4>
+                            <div class="m-b-md">
+                                <p class="clear m-b-0" style="color: #FFF !important;">
+                                    Km-4 salida a carretera a Tela
+                                    <br>
+                                    El Progreso, Yoro, Honduras, C.A.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end: Footer widget area 2 -->
+                    </div>
+                    <div class="col-md-6 p-l-40">
+                        <!-- Footer widget area 3 -->
+                        <div class="widget m-b-0">
+                            <h4 class="text-u-c m-b-10">
+                                <i class="fa fa-phone"></i><strong> +504</strong> 2544-0070</h4>
+                            <div class="m-b-md">
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa-envelope"></i></td>
+                                        <td style="padding-left:10px;">
+                                            <a href> ventas@baprosa.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td style="padding-left:10px;">
+                                            <a href> info@baprosa.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="clear text-{{app.setting.theme.primary}}-hover m-b-0">
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- end: Footer widget area 3 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- end: Wrapper -->
+
+<!-- Go to top button -->
+<a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
+
+
+<!--Plugins-->
+<script src="./libs/js/jquery.js"></script>
+<script src="./libs/js/plugins.js"></script>
+
+
+<!-- Angular -->
+<script src="libs/angular/angular/angular.js"></script>
+<script src="libs/angular/angular-animate/angular-animate.js"></script>
+<script src="libs/angular/angular-resource/angular-resource.js"></script>
+<script src="libs/angular/angular-sanitize/angular-sanitize.js"></script>
+<script src="libs/angular/angular-touch/angular-touch.js"></script>
+
+<!-- router -->
+<script src="libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- storage -->
+<script src="libs/angular/ngstorage/ngStorage.js"></script>
+<!-- utils -->
+<script src="libs/angular/angular-ui-utils/ui-utils.js"></script>
+<!-- lazyload -->
+<script src="libs/angular/oclazyload/dist/ocLazyLoad.js"></script>
+
+<script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AplKUW6ejm4XGXilDPsPpGk5sQtQCpLO6S9bk0dl6EaIC_eDai2-Xrvy8snqGfUH'
+        async defer></script>
+
+<!-- App -->
+<script src="scripts/app.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/config.lazyload.js"></script>
+<script src="scripts/config.router.js"></script>
+<script src="scripts/app.ctrl.js"></script>
+
+<script src="apps/marcas/marcas.js"></script>
+<script src="apps/eventos/eventos.js"></script>
+
+<script src="scripts/directives/ui-jp.js"></script>
+<script src="scripts/directives/ui-nav.js"></script>
+<script src="scripts/directives/ui-fullscreen.js"></script>
+<script src="scripts/directives/ui-scroll-to.js"></script>
+<script src="scripts/directives/ui-toggle-class.js"></script>
+<script src="scripts/directives/ui-include.js"></script>
+
+<script src="scripts/filters/fromnow.js"></script>
+
+<script src="scripts/services/ngstore.js"></script>
+<script src="scripts/services/ui-load.js"></script>
+<script src="scripts/services/palette.js"></script>
+
+
+<script src="libs/angular/angular-strap/dist/angular-strap.js"></script>
+<script src="libs/angular/angular-strap/dist/angular-strap.tpl.js"></script>
+</body>
+
+</html>

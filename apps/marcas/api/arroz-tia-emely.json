@@ -1,0 +1,7 @@
+{
+  "items": [
+    {"code": "401", "name": "Arroz Tía Emely", "weight": "1.75 KGS", "price": 39.6},
+    {"code": "501", "name": "Arroz Tía Emely", "weight": "350 GRMS", "price": 7.92},
+    {"code": "301", "name": "Arroz Tía Emely", "weight": "8.75 KGS", "price": 198}
+  ]
+}

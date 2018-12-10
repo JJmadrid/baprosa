@@ -1,0 +1,139 @@
+<!--
+@Author: Raquel Jackson
+@Date:   2018-08-28T19:08:14-06:00
+@Email:  r.jackson@msn.com
+@Last modified by:   Raquel Jackson
+@Last modified time: 2018-09-05T01:23:56-06:00
+-->
+<header id="header" class="header-static">
+    <div id="header-wrap">
+        <div class="container">
+            <!--Logo-->
+            <div id="logo">
+                <a ui-sref="app.index" class="logo" data-dark-logo="assets/images/logo.png">
+                    <img src="assets/images/logo.png" alt="Baprosa">
+                </a>
+            </div>
+            <!--End: Logo-->
+
+            <!--Top Search Form-->
+            <div id="top-search">
+                <form action="search-results-page.html" method="get">
+                    <input type="text" name="q" class="form-control" value="" placeholder="Start typing & press  &quot;Enter&quot;">
+                </form>
+            </div>
+            <!--end: Top Search Form-->
+
+            <!--Header Extras-->
+            <div id="header-extras-icons" class="header-extras">
+                <ul>
+                    <li class="hidden-xs">
+                        <!--shopping cart-->
+                        <div id="shopping-cart">
+                            <a class="orange-font" href="" ui-sref="app.carrito">
+                                <i class="fa fa-shopping-cart orange-font"></i>
+                                ({{shoppingCart.length}})
+                            </a>
+                        </div>
+                        <!--end: shopping cart-->
+                    </li>
+                    <li class="hidden-xs">
+                        <!--facebook-->
+                        <div id="facebook">
+                            <a target="_blank" href="https://www.facebook.com">
+                                <img id="facebook-logo" src="assets/images/social/fb.png" alt="">
+                            </a>
+                        </div>
+                        <!--end: facebook-->
+                    </li>
+                    <li class="hidden-xs">
+                        <!--instagram-->
+                        <div id="instagram">
+                            <a target="_blank" href="https://www.instagram.com">
+                                <img id="instagram-logo" src="assets/images/social/insta.png" alt="">
+                            </a>
+                        </div>
+                        <!--end: instagram-->
+                    </li>
+            </ul>
+
+            </div>
+            <div  class="header-extras">
+                <ul>
+                    <li>
+                        <div class="topbar-dropdown">
+                            <a class="title orange-font" ng-show="isLogged()" ng-click="logout()">
+                                CERRAR SESIÓN <i class="fa fa-sort-down"></i>
+                            </a>
+                            <a class="title orange-font" ng-show="!isLogged()" ng-click="login()">
+                                INICIAR SESIÓN <i class="fa fa-sort-down"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--end: Header Extras-->
+
+            <!--Navigation Resposnive Trigger-->
+            <div id="mainMenu-trigger">
+                <button class="lines-button x"> <span class="lines"></span> </button>
+            </div>
+            <!--end: Navigation Resposnive Trigger-->
+
+            <!--Navigation-->
+            <div id="mainMenu" class="menu-center">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a ng-class="getClass('/baprosa')" href="#!" role="button">Baprosa</a>
+                                <ul class="dropdown-menu">
+                                    <li ng-click="loadBaprosa(1)">
+                                        <span>Nuestra Historia</span>
+                                    </li>
+                                    <li ng-click="loadBaprosa(1)">
+                                        <span>Misión y visión</span>
+                                    </li>
+                                    <li ng-click="loadBaprosa(3)">
+                                        <span>Valores</span>
+                                    </li>
+                                    <li ng-click="loadBaprosa(4)">
+                                        <span>RSE</span>
+                                    </li>
+                                    <li ng-click="loadBaprosa(5)">
+                                        <span>Certificaciones</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a ng-class="getClass('/marcas')" href="#!" role="button" >Nuestras marcas</a>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="brand in app.brands" ng-click="loadBrand(brand)">
+                                        <span>{{brand.firmName}}</span>
+                                    </li>
+                                    <!--<li>
+                                        <a ui-sref="app.marcas.arroz-tia-emely">Arroz Tía Emely</a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="app.marcas.arroz-sabrocito">Arroz Sabrocito</a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="app.marcas.arroz-original">Arroz Original</a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="app.marcas.arroz-perlita">Arroz Perlita</a>
+                                    </li>-->
+                                </ul>
+                            </li>
+                            <li><a ng-class="getClass('/eventos')" href="#!" ui-sref="app.eventos">Evento</a></li>
+                            <li><a ng-class="getClass('/contactanos')" href="#!" ui-sref="app.contactanos">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--end: Navigation-->
+        </div>
+    </div>
+</header>
+
+<div ui-view id="view"></div>

@@ -1,0 +1,26 @@
+{
+  "name": "Baprosa",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -o -c-1"
+  },
+  "keywords": [],
+  "author": "Raquel Jackson",
+  "dependencies": {
+    "ajv": "^6.5.4",
+    "angular": "^1.7.4",
+    "desandro-matches-selector": "^2.0.2",
+    "ev-emitter": "^1.1.1",
+    "fizzy-ui-utils": "^2.0.7",
+    "get-size": "^2.0.3",
+    "http-server": "^0.11.1",
+    "isotope": "^1.0.0-alpha.3",
+    "jquery": "^3.3.1",
+    "masonry-layout": "^4.2.2",
+    "outlayer": "^2.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

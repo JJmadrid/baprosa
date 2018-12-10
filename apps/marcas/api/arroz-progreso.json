@@ -1,0 +1,15 @@
+{
+  "items": [
+    {"code": "2001", "name": "Arroz Progreso", "weight": "1 LB", "price":10.04},
+    {"code": "1701", "name": "Arroz Progreso", "weight": "1,500 GRMS", "price": 35},
+    {"code": "402", "name": "Arroz Progreso", "weight": "1.75 KG", "price": 39.6},
+    {"code": "101", "name": "Arroz Progreso", "weight": "100 LB", "price": 932},
+    {"code": "207", "name": "Arroz Progreso", "weight": "25 Lb", "price": 241},
+    {"code": "502", "name": "Arroz Progreso", "weight": "350 GRMS", "price": 7.92},
+    {"code": "2002", "name": "Arroz Progreso", "weight": "5 X 5 LB", "price": 50.2},
+    {"code": "302", "name": "Arroz Progreso", "weight": "8.75 KG", "price": 196},
+    {"code": "504", "name": "Arroz Progreso", "weight": "350 GRMS", "price": 8.2},
+    {"code": "304", "name": "Arroz Progreso", "weight": "8.75 KG", "price": 205},
+    {"code": "404", "name": "Arroz Progreso", "weight": "1.75 KG", "price": 41}
+  ]
+}

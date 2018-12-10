@@ -1,0 +1,70 @@
+<!-- SHOP CART -->
+<section id="shop-cart">
+    <div class="container">
+        <div class="shop-cart">
+            <div class="table table-condensed table-striped table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="cart-product-thumbnail">Producto</th>
+                            <th class="cart-product-name">Descripción</th>
+                            <th class="cart-product-price">Precio</th>
+                            <th class="cart-product-quantity">Cantidad</th>
+                            <th class="cart-product-subtotal">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in shoppingCart">
+                            <td class="cart-product-thumbnail">
+                                <div class="text-center">
+                                    <img style="max-width: 100px !important;" alt="Shop product image!" ng-src="assets/images/products/{{item.itemCode}}.jpg" onError="this.onerror=null;this.src='assets/images/products/undefined.jpg';">
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn btn-xs btn-success" ng-click="removeShoppingCart($index)">
+                                        Eliminar Pedido
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="cart-product-description">
+
+                                <div class="cart-product-thumbnail-name">{{item.itemName}}</div>
+                            </td>
+                            <td class="cart-product-price">
+                                <span class="amount">{{item.price | currency: 'L '}}</span>
+                            </td>
+                            <td class="cart-product-quantity">
+                                <div class="quantity">
+                                    <input type="button" class="minus" value="-" ng-click="lessQuantity(item)">
+                                    <input type="text" class="qty" value="1" name="quantity" ng-model="item.quantity">
+                                    <input type="button" class="plus" value="+" ng-click="addQuantity(item)">
+                                </div>
+                            </td>
+                            <td class="cart-product-subtotal text-right">
+                                <span class="amount">{{itemTotal(item) | currency: 'L '}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="cart-product-name text-right">
+                                <strong>Total</strong>
+                            </td>
+                            <td class="cart-product-name text-right">
+                                <span class="amount color lead">
+                                    <strong>{{orderTotal() | currency: 'L'}}</strong>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8 text-right">
+                    <button type="button" class="btn btn-primary" ui-sref="app.marcas">Continuar pedido</button>
+                    <button type="button" class="btn btn-success" ng-click="confirmModal()">Hacer pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: SHOP CART -->

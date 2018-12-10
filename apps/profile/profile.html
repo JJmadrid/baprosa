@@ -1,0 +1,56 @@
+<!-- Section -->
+<section>
+    <div class="container">
+
+        <!--Default Form-->
+        <div class="hr-title hr-long center">
+            <abbr>Perfil</abbr>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form ng-submit="saveProfile()">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="name">Nombre</label>
+                                <input type="text" class="form-control required" name="senderName" ng-model="logged.name" placeholder="Nombre" id="name" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="email">Correo</label>
+                                <input type="email" class="form-control required email" name="senderEmail" ng-model="logged.email" placeholder="Correo" id="email" aria-required="true">
+                            </div>
+                        </div>
+                        <!--<div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="phone">Teléfono</label>
+                                <input type="text" class="form-control" name="phone" ng-model="logged.phoneNumber" placeholder="Teléfono" id="phone" aria-required="false">
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="password">Contraseña</label>
+                                <input type="password" class="form-control" ng-model="logged.password" name="password" placeholder="Contraseña" id="password" aria-required="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group text-center">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--END: Default Form-->
+        <hr class="space">
+        <!--Default Form-->
+
+    </div>
+</section>

@@ -1,0 +1,206 @@
+<!-- Inspiro Slider -->
+<div id="slider" class="inspiro-slider" data-height-xs="360">
+    <!-- Slide 1 -->
+    <div class="slide" style="background-image:url('assets/images/pages/p8.jpg');" ng-if="showPage(1)" >
+        <div  class="container m-x-2 height-80">
+            <div style="position:relative" class="slide-captions text-left text-light text-justify height-100">
+                <!-- LR arrows -->
+                  <div class="text-center right-arrow">
+                      <a ng-click="loadBaprosa(3)" class="scroll-to"><i class="fa fa-chevron-right fa-1x up-arrow-top left-right-arrow"></i></a>
+                    </div>
+                <!-- Captions -->
+                <div class="col-md-7 right text-light height-100">
+                    <div class="hero-heading-2 background-colored text-dark height-100 align-flex-text-center">
+                      <div ng-show="section === 1">
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">NUESTRA HISTORIA</h3>
+                        <p>BAPROSA fue fundada en el año de 1985 en el Progreso, Yoro, por un grupo de socios. El presidente, Michael Hawit, era un hombre dedicado a la ganadería que vio en el cultivo de arroz una oportunidad para aprovechar mejor sus tierras ya que estas poseen mucho recurso hídrico. </p>
+                        <p>Después de cultivar el arroz por un par de años, se comienzan las instalaciones del molino para procesar el grano. Su capacidad era de 50 quintales por hora y así sale al mercado el producto bajo las marcas de arroz Progreso, Perlita, Sabrosito y Tía Emely, con el objetivo de ofrecer a la familia hondureña un arroz de excelente calidad.</p>
+                        <div style="position:absolute;bottom:30px;left:50%;" class="text-center">
+                          <a ng-click="section=2" class="scroll-to"><i class="fa fa-chevron-down fa-1x"></i></a>
+                        </div>
+                      </div>
+                      <div ng-show="section === 2">
+                        <div class="text-center">
+                          <a  ng-click="section=1" class="scroll-to"><i class="fa fa-chevron-up fa-1x up-arrow-top"></i></a>
+                        </div>
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">NUESTRA HISTORIA</h3>
+                        <p>Al inicio BAPROSA contaba con una fuerza laboral de 25 empleados distribuidos en todas las áreas. Con el paso del tiempo la empresa se ha ido expandiendo y se ha visto en la necesidad de contratar más empleados. En la actualidad cuenta con 150 empleados organizados por departamentos. </p>
+                        <p>En el año 2016, BAPROSA inauguró su planta procesadora de semilla certificada. Actualmente la empresa posee tecnología avanzada para el procesamiento de arroz, un molino moderno, estación de recibo y secado con el fin de ser la empresa líder en el mercado nacional de arroz.</p>
+                        <div class="text-center">
+                          <a ng-click="section=3" class="scroll-to"><i class="fa fa-chevron-down fa-1x down-arrow-bottom"></i></a>
+                        </div>
+                      </div>
+                      <div ng-show="section === 3">
+                        <div class="text-center">
+                          <a ng-click="section=2" class="scroll-to"><i class="fa fa-chevron-up fa-1x up-arrow-top"></i></a>
+                        </div>
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">MISIÓN</h3>
+                        <p>Asegurar que nuestros productos cumplan las especificaciones del cliente a través de un precio competitivo cumpliendo con los requisitos de calidad e inocuidad para consolidar el liderazgo de la marca.</p>
+
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">VISIÓN</h3>
+                        <p>Ser un beneficio de arroz reconocido a nivel nacional por sus marcas líderes, su calidad, buen servicio y responsabilidad social. </p>
+
+
+                      </div>
+
+                    </div>
+                </div>
+                <!-- end: Captions -->
+            </div>
+        </div>
+    </div>
+    <!-- end: Slide 1 -->
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image:url('assets/images/pages/p3.jpg');" ng-if="showPage(3)">
+        <div class="container height-80">
+            <div style="position:relative" class="slide-captions text-left text-light height-100">
+                <!-- LR arrows -->
+
+                <div class="text-center left-arrow">
+                    <a ng-click="loadBaprosa(1)" class="scroll-to"><i class="fa fa-chevron-left fa-1x up-arrow-top left-right-arrow"></i></a>
+                  </div>
+                  <div class="text-center right-arrow">
+                      <a ng-click="loadBaprosa(4)" class="scroll-to"><i class="fa fa-chevron-right fa-1x up-arrow-top left-right-arrow"></i></a>
+                    </div>
+
+                
+
+
+                <!-- Captions -->
+                <div class="col-md-7 right text-light">
+                    <div class="hero-heading-2 background-colored text-dark">
+                      <div>
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">VALORES</h3>
+                        <p>
+                          <strong>Orden y Limpieza</strong>
+                          <br>
+                          En Baprosa valoramos el orden y la limpieza en los lugares de trabajo mediante la implementación y seguimiento del programa de 5 S´s ya que hacen más eficientes nuestra labor.
+                        </p>
+                        <p>
+                          <strong>Respeto</strong>
+                          <br>
+                          El respeto a nuestros clientes y colaboradores es indispensable para una relación mutuamente beneficiosa.
+                        </p>
+                        <p>
+                          <strong>Responsabilidad</strong>
+                          <br>
+                          La responsabilidad por hacer las cosas bien desde la primera vez hacen de nuestro equipo un equipo de primera.
+                        </p>
+                        <p>
+                          <strong>Honestidad</strong>
+                          <br>
+                          Nuestros colaboradores son personas de confianza y lo demuestran en sus acciones.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <!-- end: Captions -->
+            </div>
+        </div>
+    </div>
+    <!-- end: Slide 2 -->
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image:url('assets/images/pages/p4.jpg');" ng-if="showPage(4)">
+        <div class="container height-80">
+            <div style="position:relative;" class="slide-captions text-left text-light height-100">
+                <!-- LR arrows -->
+                <div class="text-center left-arrow">
+                  <a ng-click="loadBaprosa(3)" class="scroll-to"><i class="fa fa-chevron-left fa-1x up-arrow-top left-right-arrow"></i></a>
+                </div>
+                <div class="text-center right-arrow">
+                    <a ng-click="loadBaprosa(5)" class="scroll-to"><i class="fa fa-chevron-right fa-1x up-arrow-top left-right-arrow"></i></a>
+                  </div>
+                <!-- Captions -->
+                <div class="col-md-7 right text-light height-100">
+                    <div class="hero-heading-2 background-colored text-dark height-100 align-flex-text-center">
+                      <div ng-show="section === 1">
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">RESPONSABILIDAD SOCIAL EMPRESARIAL</h3>
+                        <p>
+                          Cultivamos, industrializamos y comercializamos arroz con el compromiso de controlar y disminuir la huella que tienen nuestros procesos sobre el medio ambiente. Lo hacemos por medio de la innovación, eficiencia en el uso de recursos y cumpliendo con los requisitos legales, de manera que generemos una cultura ambiental en todos nuestros colaboradores.
+                          <br>
+                          Para lograrlo, ejecutaremos las siguientes estrategias:
+                          <br>
+                          <br>
+                          <strong>
+                            -    Realizar esfuerzos para reducir las emisiones de GEI que generan nuestros procesos.
+                            <br>
+                            -    Promover el reciclaje y aprovechamiento de insumos dentro de la organización y con las comunidades vecinas.
+                            <br>
+                            -    Hacer uso eficiente del agua y energía en nuestros procesos.
+                            <br>
+                            -    Hacer alianzas ambientales con otras partes interesadas en busca de la mejora continua y la protección del ambiente.
+                            <br>
+                          </strong>
+                        </p>
+                        <div class="text-center">
+                          <a ng-click="section=2" class="scroll-to"><i class="fa fa-chevron-down fa-1x down-arrow-bottom"></i></a>
+                        </div>
+                      </div>
+
+                      <div ng-show="section === 2">
+                        <div class="text-center">
+                          <a ng-click="section=1" class="scroll-to"><i class="fa fa-chevron-up fa-1x up-arrow-top"></i></a>
+                        </div>
+                        <h3 class="text-medium m-t-0" style="color:#602901 !important">RESPONSABILIDAD SOCIAL EMPRESARIAL</h3>
+                        <p>
+                          Apoyamos a 22 instituciones de beneficencia mediante la donación de arroz para alimentación diaria.
+                        </p>
+                        <p>
+                          <strong>
+                            Asilos de ancianos
+                            <br>
+                            <br>
+                            Iglesias
+                            <br>
+                            <br>
+                            Instituciones educativas
+                            <br>
+                            <br>
+                            Hogares de niños
+                          </strong>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <!-- end: Captions -->
+            </div>
+        </div>
+    </div>
+    <!-- end: Slide 3 -->
+    <!-- Slide 4 -->
+    <div class="slide" style="background-image:url('assets/images/pages/p6.jpg');" ng-if="showPage(5)">
+        <div class="container height-80">
+            <div  style="position:relative;" class="slide-captions text-left text-light height-100">
+                <!-- LR arrows -->
+                <div class="text-center left-arrow">
+                  <a ng-click="loadBaprosa(4)" class="scroll-to"><i class="fa fa-chevron-left fa-1x up-arrow-top left-right-arrow"></i></a>
+                </div>
+                <!-- Captions -->
+                <div class="col-md-7 right text-light height-100">
+                    <div  class="hero-heading-2 background-colored text-dark height-100 align-flex-text-center">
+
+                      <h3 class="text-medium m-t-0" style="color:#602901 !important">CERTIFICACIONES</h3>
+                      <p>
+                        Ser reconocidos como líderes en el mercado nacional asegurando la satisfacción de nuestros clientes, por medio del cumplimiento de los requisitos de calidad e inocuidad de los procesos que garanticen la estabilidad de nuestro producto.
+                      </p>
+                      <p>
+                        Nuestros procesos se enmarcarán en la mejora continua, el cumplimiento legal y los estándares éticos, demostrando nuestra responsabilidad social y ambiental.
+                      </p>
+                      <p>
+                        Actualmente estamos en proceso de culminar con la certificación de FSSC 22000, que es un sistema de gestión de seguridad alimentaria en toda la cadena de suministro.
+                      </p>
+                    </div>
+                </div>
+                <!-- end: Captions -->
+            </div>
+        </div>
+    </div>
+    <!-- end: Slide 4 -->
+</div>
+<!--end: Inspiro Slider -->
+
+<script src="./libs/js/jquery.js"></script>
+<script src="./libs/js/plugins.js"></script>
+
+<!--Template functions-->
+<script src="./libs/js/functions.js"></script>
