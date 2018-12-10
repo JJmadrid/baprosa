@@ -13767,18 +13767,18 @@ body.device-xs .col-md-3 .flickr-widget img {
 .left-arrow{
   position: absolute;
   top: 40%;
-  left: 0%;
+  left: -7%;
   
 }
 
 .right-arrow{
   position: absolute;
   top: 40%;
-  right: -3%;
+  right: -5%;
 }
 
 .left-right-arrow{
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .cart-icon-hero{

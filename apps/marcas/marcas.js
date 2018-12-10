@@ -41,7 +41,7 @@
       {"itemCode": "114", "itemName": "BLUE RIBBON", "weight": "100 LBS", "price": 0, "firmCode": -1, "active": 1},
       {"itemCode": "115", "itemName": "ARROZ SELECCIONADO ", "weight": " 100 LBS.", "price": 825, "firmCode": -1, "active": 1},
       {"itemCode": "116", "itemName": "ARROZ SABROSITO ROJO", "weight": "100 LBS", "price": 825, "firmCode": 5, "active": 1},
-      {"itemCode": "117", "itemName": "ARROZ SABROSITO VERDE", "weight": "100 LBS HF", "price": 825, "firmCode": 5, "active": 1},
+      // {"itemCode": "117", "itemName": "ARROZ SABROSITO VERDE", "weight": "100 LBS HF", "price": 825, "firmCode": 5, "active": 1},
       {"itemCode": "1701", "itemName": "ARROZ PROGRESO ", "weight": " 1,500 GRMS", "price": 35, "firmCode": 1, "active": 1},
       {"itemCode": "1702", "itemName": "ARROZ ORIGINAL", "weight": "1,500 GMS", "price": 35, "firmCode": 6, "active": 1},
       {"itemCode": "1703", "itemName": "ARROZ SULI", "weight": "1500 GRMS", "price": 28.4, "firmCode": 8, "active": 1},
